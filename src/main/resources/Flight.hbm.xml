@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="org.example.model.Flight" table="flights">
+        <meta attribute="class-description">
+            This class contains precise information about flights.
+        </meta>
+        <id name="flightNumber" type="text" column="flight_id">
+        </id>
+
+        <property name="departureDate" column="dep_date" type="text" not-null="true"/>
+        <property name="maxSeats" column="max_seats" type="integer" not-null="true"/>
+        <property name="availableSeats" column="av_seats" type="integer" not-null="true"/>
+        <property name="route" column="route" type="text" not-null="true"/>
+        
+        <set name="passengers" table="tickets" cascade="save-update">
+            <key column="flight_id"/>
+            <many-to-many column="pass_id" class="org.example.model.Passenger"/>
+        </set>
+    </class>
+</hibernate-mapping>

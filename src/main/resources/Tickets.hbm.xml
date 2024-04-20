@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="org.example.model.Tickets" table="tickets">
+        <meta attribute="class-description">
+            This class contains precise information about which clients fly on which flights.
+        </meta>
+        <id name="id" type="int" column="pass_id">
+        </id>
+        
+
+    </class>
+</hibernate-mapping>
