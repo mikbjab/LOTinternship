@@ -2,17 +2,24 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.StartViewController">
+<AnchorPane prefHeight="198.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.StartViewController">
    <children>
-      <Button layoutX="98.0" layoutY="110.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="98.0" layoutY="223.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="98.0" layoutY="317.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="435.0" layoutY="104.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="435.0" layoutY="211.0" mnemonicParsing="false" text="Button" />
-      <Text layoutX="113.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="450.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Button fx:id="showFlightsButton" layoutX="41.0" layoutY="77.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="122.0" text="Wyświetl loty" />
+      <Button fx:id="addFlightButton" layoutX="40.0" layoutY="121.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="122.0" text="Dodaj lot" />
+      <Button fx:id="findFlightButton" layoutX="41.0" layoutY="165.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="122.0" text="Znajdź lot" />
+      <Button fx:id="showPassengersButton" layoutX="260.0" layoutY="77.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="122.0" text="Wyświetl pasażerów" />
+      <Button fx:id="addPassengerButton" layoutX="260.0" layoutY="121.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="122.0" text="Dodaj pasażera" />
+      <Text layoutX="79.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Loty">
+         <font>
+            <Font size="24.0" />
+         </font></Text>
+      <Text layoutX="257.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pasażerowie">
+         <font>
+            <Font size="24.0" />
+         </font></Text>
+      <Line endY="190.89999389648438" layoutX="215.0" layoutY="14.0" startY="-20.399999618530273" />
    </children>
 </AnchorPane>
